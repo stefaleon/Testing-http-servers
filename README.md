@@ -3,6 +3,5 @@
 ## Testing Express Apps
 
 * Mocha
-* expect
 * supertest
 

@@ -9,6 +9,20 @@ app.get('/', (req, res) => {
 	});
 });
 
+
+app.get('/users', (req, res) => {
+	res.send([{
+		user: 'admin',
+		status: 'administrator'
+	}, {
+		user: 'guest',
+		status: 'guest'
+	}, {
+		user: 'super',
+		status: 'superuser'
+	}]);
+});
+
 app.listen(3000, () => {
 	console.log('server started on port 3000');
 });
